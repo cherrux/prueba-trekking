@@ -15986,34 +15986,33 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
+.about1 .about_hero {
+  padding: 10vw 10vw 0 10vw;
+}
 
 @media screen and (max-width: 767px) {
   .about1 {
     flex-direction: column;
     width: 100vw;
-    height: 100vw;
+    height: 130vw;
+    padding-top: 10vw;
   }
-  .about1 .about_hero {
-    padding: 10vw 10vw 0 10vw;
-  }
-
-  .about1_imagen-fondo1 {
+  .about1 .about1_imagen-fondo1 {
     width: 100%;
-    height: auto;
+    height: 100%;
     background: url("../images/bg-hero.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
+    background-position: 90%;
   }
 }
 @media screen and (min-width: 768px) {
   .about1 {
-    flex-direction: row;
     width: 100vw;
     height: 60vw;
     background: url("../images/bg-hero.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 }
 .prices_titulo {
