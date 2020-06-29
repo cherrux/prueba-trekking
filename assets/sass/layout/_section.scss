@@ -2,13 +2,61 @@
 @import '../abstracts/varibles';
 @import '../base/typography';
 
-.about{
+.about1{
 
-    .card{
-        padding-top: 10vw;
+   display: flex;
+
+
+   //imagen fondo de montaña
+   //background:url('../images/bg-price.svg');
+   //background-repeat: no-repeat;
+   //background-size: cover;
+ 
+   align-items: center;
+   justify-content: center;
+    h1{
+        font-size: $xxxxx-large;
+        font-weight: $bold;
+    }
+    p{
+ 
+        font-weight: $regular;
+        font-size: $medium;
     }
 
 }
+  // Media Querys versión  no movil desde tablet para abajo
+    @include for-tablet-portrait-down { 
+    .about1{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vw;
+        .about_hero{
+            padding: 10vw 10vw 0 10vw;
+        }
+    }
+
+    .about1_imagen-fondo1{
+            width: 100%;
+            height: auto;
+            background:url('../images/bg-hero.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100%;
+                            }
+            }   
+  // Media Querys versión  no movil desde tablet para abajo
+    @include for-tablet-portrait-up { 
+        .about1{
+            flex-direction: row;
+            width: 100vw;
+            height: 60vw;
+            background:url('../images/bg-hero.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
 
 
 

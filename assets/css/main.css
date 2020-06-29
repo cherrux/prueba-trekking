@@ -15973,10 +15973,49 @@ p {
   line-height: 2rem;
 }
 
-.about .card {
-  padding-top: 10vw;
+.about1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about1 h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.about1 p {
+  font-weight: 400;
+  font-size: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .about1 {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vw;
+  }
+  .about1 .about_hero {
+    padding: 10vw 10vw 0 10vw;
+  }
+
+  .about1_imagen-fondo1 {
+    width: 100%;
+    height: auto;
+    background: url("../images/bg-hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about1 {
+    flex-direction: row;
+    width: 100vw;
+    height: 60vw;
+    background: url("../images/bg-hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .prices_titulo {
   background: url("../images/bg-price.svg");
   background-repeat: no-repeat;
