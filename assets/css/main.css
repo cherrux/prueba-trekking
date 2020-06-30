@@ -16033,7 +16033,7 @@ p {
   justify-content: center;
 }
 .prices_titulo h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   color: #FFFFFF;
   text-align: center;
@@ -16098,6 +16098,53 @@ p {
     max-width: 25vw;
   }
 }
+.features {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+.features h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.features h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.features p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.features .features__text {
+  padding: 5vw;
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.features__graphic:hover {
+  animation: opacidad 5s infinite;
+}
+
 .footer {
   width: 100%;
   height: auto;

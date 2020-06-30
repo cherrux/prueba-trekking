@@ -1,6 +1,7 @@
 // precios
 @import '../abstracts/varibles';
 @import '../base/typography';
+@import '../base/animation';
 
 .about1{
 
@@ -74,8 +75,6 @@
 
 
 
-
-
 //precios
 .prices_titulo {
     background:url('../images/bg-price.svg');
@@ -88,7 +87,7 @@
     align-items: center;
     justify-content: center;
     h3{
-        font-size: $large;
+        font-size: $x-large;
         font-weight: $bold;
         color: $white;
         text-align: center;
@@ -155,3 +154,56 @@
         }
     }
 }
+
+
+//features
+.features{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+
+
+    h2{font-size: $x-large;
+    font-weight: $bold;
+    text-align: center;
+    }
+
+    h3{
+ font-size: $large;
+font-weight: $bold;
+text-align: center;
+    }
+
+    p{
+ 
+        font-weight: $regular;
+        font-size: $small;
+    }
+    .features__text{
+        padding: 5vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @include keyframes(opacidades);
+    
+    .features__graphic{
+
+        &:hover {
+      animation: opacidad 5s infinite;
+                }        
+    }
