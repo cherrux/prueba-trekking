@@ -15986,9 +15986,6 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
-.about1 .about_hero {
-  padding: 10vw 10vw 0 10vw;
-}
 
 @media screen and (max-width: 767px) {
   .about1 {
@@ -15996,6 +15993,9 @@ p {
     width: 100vw;
     height: 130vw;
     padding-top: 10vw;
+  }
+  .about1 .about_hero {
+    padding: 10vw 10vw 0 10vw;
   }
   .about1 .about1_imagen-fondo1 {
     width: 100%;
@@ -16008,11 +16008,18 @@ p {
 }
 @media screen and (min-width: 768px) {
   .about1 {
+    flex-direction: row;
     width: 100vw;
     height: 60vw;
     background: url("../images/bg-hero.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .about_hero {
+    padding: 10vw 55vw 10vw 10vw;
   }
 }
 .prices_titulo {

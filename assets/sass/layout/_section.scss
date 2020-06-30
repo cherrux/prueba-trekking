@@ -23,9 +23,6 @@
         font-weight: $regular;
         font-size: $medium;
     }
-    .about_hero{
-        padding: 10vw 10vw 0 10vw;
-    }
 }
   // Media Querys versión  no movil desde tablet para abajo
     @include for-tablet-portrait-down { 
@@ -34,6 +31,9 @@
         width: 100vw;
         height: 130vw;
         padding-top: 10vw;
+    .about_hero{
+            padding: 10vw 10vw 0 10vw;
+        }
 
     .about1_imagen-fondo1{
             width: 100%;
@@ -48,11 +48,18 @@
   // Media Querys versión  no movil desde tablet para arriba
     @include for-tablet-portrait-up { 
         .about1{
+            flex-direction: row;
             width: 100vw;
             height: 60vw;
             background:url('../images/bg-hero.svg');
             background-repeat: no-repeat;
             background-size: contain;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+        }
+            .about_hero{
+            padding: 10vw 55vw 10vw 10vw;
         }
     }
 
